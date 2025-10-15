@@ -33,7 +33,7 @@ class ProductTitleWithImage extends StatelessWidget {
                   children: [
                     const TextSpan(text: "Price\n"),
                     TextSpan(
-                      text: "\$${product.price}",
+                      text: "${product.price} FCFA",
                       style: Theme.of(context).textTheme.headlineSmall!
                           .copyWith(
                             color: Colors.white,
@@ -44,10 +44,12 @@ class ProductTitleWithImage extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: kDefaultPaddin),
-              Expanded(
+              SizedBox(
+                width: 200, // 👈 largeur fixe
+                height: 200, // 👈 hauteur fixe
                 child: Hero(
                   tag: "${product.id}",
-                  child: Image.asset(product.image, fit: BoxFit.fill),
+                  child: Image.network(product.image, fit: BoxFit.cover),
                 ),
               ),
             ],

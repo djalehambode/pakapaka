@@ -1,16 +1,97 @@
-# pakapaka
+# 🛍️ E-Commerce App — Flutter + DRF (JWT Auth)
 
-A new Flutter project.
+Ce dépôt est une **preuve de faisabilité technique** démontrant comment prendre un **template Flutter open-source** et y intégrer une **logique métier minimale** connectée à une **API Django REST Framework** sécurisée avec **JWT**.
 
-## Getting Started
+L’objectif est de personnaliser une base existante pour poser une **architecture claire et fonctionnelle** (authentification + affichage dynamique de données).
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Fonctionnalités principales
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔐 Authentification **JWT** avec DRF  
+- 🧑 Connexion utilisateur depuis Flutter  
+- 🛍️ Liste dynamique de produits affichée depuis une API REST  
+- 🧭 Basée sur un template open-source Flutter  
+- 🧪 Simple, modulaire et extensible
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🧱 Stack Technique
+
+| Côté | Technologie | Rôle |
+|------|-------------|------|
+| Frontend | [Flutter](https://flutter.dev/) | Interface utilisateur mobile |
+| Backend | [Django REST Framework](https://www.django-rest-framework.org/) | API REST |
+| Auth | [djangorestframework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/) | Sécurisation des endpoints |
+| Service API | `api_service.dart` | Gestion des requêtes HTTP et du token |
+
+---
+
+## 📂 Structure du projet Flutter
+
+lib/
+├─ api_service.dart # Gestion des appels API et Auth JWT
+├─ constants.dart # Constantes globales (URL de base...)
+├─ models/
+│ └─ product.dart # Modèle de données produit
+├─ screens/
+│ ├─ login_page.dart # Page de connexion
+│ └─ home/ # Liste des produits
+│ └─ details/ # Details d'un produits
+├─ main.dart
+
+
+---
+
+## 🧰 Exemple de modèle Product (DRF)
+
+```python
+# pakapaka_api/pakapaka_api/models.py
+
+from django.db import models
+
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    image = models.ImageField(upload_to='products/', default='products/default_product.jpeg')
+
+    def __str__(self):
+        return self.name
+
+🔐 Authentification JWT
+
+Endpoints utilisés côté backend :
+
+    POST /api/token/ — Obtenir un token JWT
+
+    POST /api/token/refresh/ — Rafraîchir le token
+
+    GET /api/products/ — Accéder aux produits (authentification requise)
+
+
+## 📸 UI (Template utilisé)
+
+### Pages principales
+
+| Accueil produits | Authentification |
+| ---------------- | ---------------- |
+| ![Accueil](https://raw.githubusercontent.com/djalehambode/pakapaka/dev/screenshots/home.png) | ![Auth](https://raw.githubusercontent.com/djalehambode/pakapaka/dev/screenshots/auth.png) |
+| ![Details](https://raw.githubusercontent.com/djalehambode/pakapaka/dev/screenshots/detail.png) |  |
+
+---
+
+### Exemple de données et backend
+
+J'ai utilisé **django-seed** pour peupler la base de données côté Django.  
+Pour les images des produits, j'ai utilisé l'image suivante de Kilichi obtenue sur Google :  
+
+| Image produit par défaut | Screenshot Seed DB | DRF Server Endpoints |
+| ----------------------- | ----------------- | ------------------ |
+| ![Produit par défaut](https://raw.githubusercontent.com/djalehambode/pakapaka/dev/screenshots/default_product.jpeg) | ![Screenshot 1](https://raw.githubusercontent.com/djalehambode/pakapaka/dev/screenshots/Screenshot_from_2025-10-15_10-18-21.png) | ![DRF Endpoints](https://raw.githubusercontent.com/djalehambode/pakapaka/dev/screenshots/drf_server_endpoints.png) |
+
+
+🤝 Remerciements
+
+Template UI : E-commerce-App-UI-Flutter
+Django REST Framework
+Flutter
