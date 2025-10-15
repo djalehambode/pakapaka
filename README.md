@@ -57,7 +57,7 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
+```
 🔐 Authentification JWT
 
 Endpoints utilisés côté backend :
@@ -92,6 +92,6 @@ Pour les images des produits, j'ai utilisé l'image suivante de Kilichi obtenue 
 
 🤝 Remerciements
 
-Template UI : E-commerce-App-UI-Flutter
-Django REST Framework
-Flutter
+- Template UI : [E-commerce-App-UI-Flutter](https://github.com/abuanwar072/E-commerce-App-UI-Flutter)
+- Backend : [Django REST Framework](https://https://www.django-rest-framework.org/)
+- Frontend : [Flutter](https://flutter.dev/)
