@@ -75,8 +75,8 @@ Endpoints utilisés côté backend :
 
 | Accueil produits | Authentification |
 | ---------------- | ---------------- |
-| ![Accueil](https://raw.githubusercontent.com/djalehambode/pakapaka/blob/dev/screenshots/home.png) | ![Auth](https://raw.githubusercontent.com/djalehambode/pakapaka/blob/dev/screenshots/auth.png) |
-| ![Details](https://raw.githubusercontent.com/djalehambode/pakapaka/blob/dev/screenshots/detail.png) |  |
+| ![Accueil](https://github.com/djalehambode/pakapaka/blob/dev/screenshots/home.png) | ![Auth](https://github.com/djalehambode/pakapaka/blob/dev/screenshots/auth.png) |
+| ![Details](https://github.com/djalehambode/pakapaka/blob/dev/screenshots/detail.png) |  |
 
 ---
 
@@ -87,7 +87,7 @@ Pour les images des produits, j'ai utilisé l'image suivante de Kilichi obtenue 
 
 | Image produit par défaut | Screenshot Seed DB | DRF Server Endpoints |
 | ----------------------- | ----------------- | ------------------ |
-| ![Produit par défaut](https://raw.githubusercontent.com/djalehambode/pakapaka/blob/dev/screenshots/default_product.jpeg) | ![Screenshot 1](https://raw.githubusercontent.com/djalehambode/pakapaka/blob/dev/screenshots/Screenshot_from_2025-10-15_10-18-21.png) | ![DRF Endpoints](https://raw.githubusercontent.com/djalehambode/pakapaka/blob/dev/screenshots/drf_server_endpoints.png) |
+| ![Produit par défaut](https://github.com/djalehambode/pakapaka/blob/dev/screenshots/default_product.jpeg) | ![Screenshot 1](https://github.com/djalehambode/pakapaka/blob/dev/screenshots/Screenshot_from_2025-10-15_10-18-21.png) | ![DRF Endpoints](https://github.com/djalehambode/pakapaka/blob/dev/screenshots/drf_server_endpoints.png) |
 
 
 🤝 Remerciements
