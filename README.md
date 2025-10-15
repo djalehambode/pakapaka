@@ -28,7 +28,7 @@ L’objectif est de personnaliser une base existante pour poser une **architectu
 ---
 
 ## 📂 Structure du projet Flutter
-
+```
 lib/
 ├─ api_service.dart # Gestion des appels API et Auth JWT
 ├─ constants.dart # Constantes globales (URL de base...)
@@ -37,9 +37,9 @@ lib/
 ├─ screens/
 │ ├─ login_page.dart # Page de connexion
 │ └─ home/ # Liste des produits
-│ └─ details/ # Details d'un produits
+│ └─ details/ # Details d'un produit
 ├─ main.dart
-
+```
 
 ---
 
