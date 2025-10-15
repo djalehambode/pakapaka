@@ -1,15 +1,20 @@
 // lib/models/product.dart
+import 'package:flutter/material.dart';
+
 class Product {
   final int id;
   final String name;
   final String description;
-  final String? image;
+  final String image;
+  final int size = 0;
+  final Color color = Colors.green;
+  final int price = 100;
 
   Product({
     required this.id,
     required this.name,
     required this.description,
-    this.image,
+    required this.image,
   });
 
   // Factory pour créer un Product à partir d'un JSON

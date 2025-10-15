@@ -1,6 +1,7 @@
 // lib/api_service.dart
 import 'package:dio/dio.dart';
 import 'constants.dart';
+import 'models/product.dart';
 
 class ApiService {
   final Dio _dio;
@@ -71,13 +72,14 @@ class ApiService {
     return false;
   }
 
-  // Récupération des produits
-  Future<List<dynamic>> getProducts() async {
+  // 🔹 Renvoie une liste d'objets Product
+  Future<List<Product>> getProducts() async {
     try {
       final response = await _dio.get(PRODUCTS_URL);
       if (response.statusCode == 200) {
-        print("Liste produits recue: \n $response");
-        return response.data;
+        final List<dynamic> data = response.data;
+        // Convertir chaque Map en Product
+        return data.map((json) => Product.fromJson(json)).toList();
       }
     } catch (e) {
       print('Failed to load products: $e');
