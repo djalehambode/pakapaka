@@ -10,7 +10,7 @@ L’objectif est de personnaliser une base existante pour poser une **architectu
 
 - 🔐 Authentification **JWT** avec DRF  
 - 🧑 Connexion utilisateur depuis Flutter  
-- 🛍️ Liste dynamique de produits affichée depuis une API REST  
+- 🛍️ Liste dynamique de produits affichée depuis une [API REST](https://github.com/djalehambode/papaka_api.git)
 - 🧭 Basée sur un template open-source Flutter  
 - 🧪 Simple, modulaire et extensible
 
