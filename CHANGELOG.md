@@ -16,16 +16,6 @@
 
 
 
-📅 Exemples de format :
 
-🗓️ 2025-10-20
-🚀 Added: initial setup for trading bot
-✅ Added: basic trading loop with async handling
-⚙️ Improved: strategy selection logic
-🧹 Refactored: structure of /core/ and /strategies/
-🐛 Fixed: incorrect ATR calculation in indicators.py
-
-🗓️ 2025-10-10
-🚀 Added: first implementation of performance tracking
-🧩 Added: config system for dynamic asset filtering
-📁 Moved: logs to /logs/trades/
+🗓️ 2025-10-21
+- ⚙️ Improved: Mise a jour du repo pour respecter les guidelines Flutter https://docs.flutter.dev/app-architecture/guide
