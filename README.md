@@ -38,7 +38,7 @@ lib/
 │ ├─ login_page.dart # Page de connexion
 │ └─ home/ # Liste des produits
 │ └─ details/ # Details d'un produit
-├─ main.dart
+└─ main.dart
 ```
 
 ---
