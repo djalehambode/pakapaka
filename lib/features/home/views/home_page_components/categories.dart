@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../../core/utils/constants.dart';
 
 // We need satefull widget for our categories
 

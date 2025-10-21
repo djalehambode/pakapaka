@@ -18,4 +18,4 @@
 
 
 🗓️ 2025-10-21
-- ⚙️ Improved: Mise a jour du repo pour respecter les guidelines Flutter https://docs.flutter.dev/app-architecture/guide
+- ⚙️ Improved: Mise a jour du repo pour respecter les guidelines Flutter (https://docs.flutter.dev/app-architecture/guide).

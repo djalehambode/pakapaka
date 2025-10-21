@@ -1,7 +1,7 @@
 // lib/api_service.dart
 import 'package:dio/dio.dart';
-import 'constants.dart';
-import 'models/product.dart';
+import '../utils/constants.dart';
+import '../../features/home/models/product_model.dart';
 
 class ApiService {
   final Dio _dio;

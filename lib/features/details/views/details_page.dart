@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../../core/utils/constants.dart';
+import '../../home/models/product_model.dart';
+import 'details_page_components/add_to_cart.dart';
+import 'details_page_components/color_and_size.dart';
+import 'details_page_components/counter_with_fav_btn.dart';
+import 'details_page_components/description.dart';
+import 'details_page_components/product_title_with_image.dart';
 
-import '../../constants.dart';
-import '../../models/product.dart';
-import 'components/add_to_cart.dart';
-import 'components/color_and_size.dart';
-import 'components/counter_with_fav_btn.dart';
-import 'components/description.dart';
-import 'components/product_title_with_image.dart';
-
-class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({super.key, required this.product});
+class DetailsPage extends StatelessWidget {
+  const DetailsPage({super.key, required this.product});
 
   final Product product;
 

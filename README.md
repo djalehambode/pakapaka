@@ -30,15 +30,35 @@ L’objectif est de personnaliser une base existante pour poser une **architectu
 ## 📂 Structure du projet Flutter
 ```
 lib/
-├─ api_service.dart # Gestion des appels API et Auth JWT
-├─ constants.dart # Constantes globales (URL de base...)
-├─ models/
-│ └─ product.dart # Modèle de données produit
-├─ screens/
-│ ├─ login_page.dart # Page de connexion
-│ └─ home/ # Liste des produits
-│ └─ details/ # Details d'un produit
-└─ main.dart
+├─ core/
+│  ├─ services/
+│  │  └─ api_service.dart        # Gestion des appels API et Auth JWT
+│  ├─ utils/
+│  │  └─ constants.dart          # Constantes globales (URL, couleurs, padding…)
+│  └─ models/                    # Modèles de données communs
+│
+├─ features/
+│  ├─ login/
+│  │  ├─ repositories/           # 
+│  │  ├─ views/
+│  │  │  └─ login_page_components/...
+│  │  │  └─ login_page.dart      # Interface de connexion
+│  │  └─ view_models/
+│  │     └─ login_page_view_model.dart # Gestion de l’état (login, validation, etc.)
+│
+│  ├─ home/
+│  │  ├─ views/
+│  │  │  ├─ home_page_components/...
+│  │  │  └─ home_page.dart       # Affichage de la liste de produits
+│  │  └─ view_models/
+│  │     └─ home_view_model.dart # Gestion du chargement des produits
+│  └─ details/
+│     ├─ views/
+│     │  └─ details_view.dart    # Page de détails d’un produit
+│     └─ view_models/
+│
+└─ main.dart                     # Point d’entrée principal de l’application
+
 ```
 
 ---
